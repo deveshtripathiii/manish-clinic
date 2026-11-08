@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Dr. Manish Dental Clinic | 30-Min OPD Booking</title>
+    <meta name="description" content="Book your 30-minute OPD dental appointment via WhatsApp with Dr. Manish. Painless dental care, Root Canal, Teeth Cleaning, Implants & Braces.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span>📍 Main Market, Dental Care Centre</span>
+                <span class="divider">•</span>
+                <span>⏰ Mon - Sat: 10:00 AM - 08:00 PM | Sun: 10:00 AM - 02:00 PM</span>
+            </div>
+            <div class="top-contact">
+                <a href="tel:9956533534" class="top-link">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    +91 9956533534
+                </a>
+                <a href="https://wa.me/919956533534" target="_blank" class="top-link whatsapp-top">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.276-.1-.476-.15-.677.15-.2.301-.776.978-.952 1.179-.176.2-.351.226-.652.075-.301-.15-1.27-.468-2.42-1.493-.895-.798-1.5-1.785-1.676-2.086-.176-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.15-.175.2-.3.301-.501.1-.2.05-.376-.025-.526-.075-.15-.677-1.63-.928-2.23-.244-.585-.493-.506-.677-.515-.175-.009-.376-.01-.577-.01-.2 0-.527.075-.802.376-.276.3-1.053 1.029-1.053 2.509 0 1.48 1.078 2.909 1.229 3.109.15.2 2.122 3.24 5.141 4.542.718.31 1.279.495 1.716.634.721.229 1.377.197 1.896.12.578-.087 1.78-.727 2.03-1.43.251-.703.251-1.305.176-1.43-.075-.125-.276-.201-.577-.351zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.97.58 3.81 1.59 5.37L2 22l4.88-1.67c1.5 1 3.29 1.58 5.16 1.58 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg>
+                    WhatsApp Support
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2C7.5 2 4 4.5 4 8c0 2.5 1.5 5 2.5 7.5S8 20 9.5 22c1.2 0 1.8-1.5 2.5-3.5.7 2 1.3 3.5 2.5 3.5 1.5-2 2-4 3-6.5S20 10.5 20 8c0-3.5-3.5-6-8-6z"></path>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-name">Dr. Manish Dental</span>
+                    <span class="brand-tag">Clinic & Implant Care</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#about">About Doctor</a>
+                <a href="#services">Services</a>
+                <a href="#booking" class="nav-highlight">OPD Booking</a>
+                <a href="#contact">Contact</a>
+                <button class="ai-header-btn" onclick="openManishAI()">
+                    <span class="ai-spark">✨</span> Ask Manish AI
+                </button>
+            </nav>
+
+            <a href="#booking" class="btn btn-primary header-cta">Book 30-Min Slot</a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge-pill">
+                    <span class="pulse-dot"></span>
+                    <span>1 OPD Slot = 30 Mins Personal Care</span>
+                </div>
+                <h1 class="hero-title">
+                    बेहतर मुस्कान और मजबूत दांतों के लिए <span class="text-gradient">Dr. Manish</span> से परामर्श लें
+                </h1>
+                <p class="hero-subtitle">
+                    आधुनिक तकनीक, दर्दरहित इलाज और व्यक्तिगत ध्यान। अपने लिए 30 मिनट का विशेष OPD स्लॉट सीधे WhatsApp पर बुक करें।
+                </p>
+
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <span class="feat-icon">⚡</span>
+                        <span>30 मिनट वन-ऑन-वन स्लॉट</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feat-icon">📱</span>
+                        <span>WhatsApp पर तुरंत कन्फर्मेशन</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feat-icon">🛡️</span>
+                        <span>100% सैनिटाइज्ड एवं दर्दमुक्त</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#booking" class="btn btn-primary btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        Book 30-Min OPD Slot
+                    </a>
+                    <button class="btn btn-outline btn-lg" onclick="openManishAI(' दाँत के दर्द में तुरंत क्या करें?')">
+                        <span class="sparkle">🤖</span> Talk to Manish AI
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-card-wrapper">
+                <div class="doctor-hero-card">
+                    <div class="doc-img-frame">
+                        <img src="assets/doctor.jpg" alt="Dr. Manish - Dental Specialist" class="doc-img" id="heroDocImg">
+                        <div class="verified-tag">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#10B981"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Verified Dental Surgeon</span>
+                        </div>
+                    </div>
+                    <div class="doc-details">
+                        <h3 class="doc-name">Dr. Manish</h3>
+                        <p class="doc-qualification">B.D.S., M.D.S. (Dental Surgeon & Specialist)</p>
+                        <div class="doc-stats">
+                            <div class="stat-box">
+                                <strong>10+</strong>
+                                <span>Years Exp.</span>
+                            </div>
+                            <div class="stat-box">
+                                <strong>5000+</strong>
+                                <span>Happy Smiles</span>
+                            </div>
+                            <div class="stat-box">
+                                <strong>4.9 ★</strong>
+                                <span>Google Rating</span>
+                            </div>
+                        </div>
+                        <div class="opd-timing-badge">
+                            <span>OPD WhatsApp Booking: <strong>9956533534</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Booking Section (Core Requirement) -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge-sub">आसान और त्वरित</span>
+                <h2 class="section-title">OPD अपॉइंटमेंट बुक करें</h2>
+                <p class="section-desc">
+                    प्रत्येक मरीज के लिए <strong>30 मिनट का स्लॉट</strong> निर्धारित होता है। एक बार में केवल एक स्लॉट बुक करें।
+                    फॉर्म भरते ही विवरण सीधे <strong>WhatsApp (9956533534)</strong> पर भेजा जाएगा।
+                </p>
+            </div>
+
+            <div class="booking-card">
+                <form id="opdBookingForm" novalidate>
+                    <!-- Step 1: Patient Information -->
+                    <div class="form-block">
+                        <div class="form-block-header">
+                            <span class="step-num">1</span>
+                            <div>
+                                <h3>मरीज का विवरण (Patient Details)</h3>
+                                <p>कृपया अपनी सही जानकारी भरें</p>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="patientName">पूरा नाम (Full Name) <span class="req">*</span></label>
+                                <div class="input-with-icon">
+                                    <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                    <input type="text" id="patientName" placeholder="उदा. Ramesh Kumar" required>
+                                </div>
+                                <span class="error-msg" id="nameError">कृपया मरीज का नाम दर्ज करें</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phoneNumber">मोबाइल नंबर (Phone Number) <span class="req">*</span></label>
+                                <div class="input-with-icon">
+                                    <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    <input type="tel" id="phoneNumber" maxlength="10" placeholder="उदा. 9876543210" required>
+                                </div>
+                                <span class="error-msg" id="phoneError">कृपया मान्य 10 अंकों का मोबाइल नंबर दर्ज करें</span>
+                            </div>
+
+                            <!-- Patient Code (Auto generated from first 4 digits of phone) -->
+                            <div class="form-group highlight-group">
+                                <div class="label-row">
+                                    <label for="patientCode">पेशेंट कोड (Patient Code) <span class="badge-auto">Auto-Generated</span></label>
+                                    <span class="info-tooltip" title="आपके मोबाइल नंबर के पहले 4 अंक आपका पेशेंट कोड होंगे">ℹ️</span>
+                                </div>
+                                <div class="input-with-icon code-wrapper">
+                                    <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="7" y1="8" x2="17" y2="8"></line><line x1="7" y1="12" x2="17" y2="12"></line><line x1="7" y1="16" x2="12" y2="16"></line></svg>
+                                    <input type="text" id="patientCode" readonly placeholder="Phone डालते ही जनरेट होगा" class="code-input">
+                                    <span class="code-badge" id="codeBadge">Code: ----</span>
+                                </div>
+                                <span class="helper-text">💡 मोबाइल नंबर के पहले 4 अंक (First 4 digits of phone number)</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="aadharNumber">आधार कार्ड नंबर (Aadhar Number) <span class="optional">(वैकल्पिक / Optional)</span></label>
+                                <div class="input-with-icon">
+                                    <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                                    <input type="text" id="aadharNumber" maxlength="14" placeholder="XXXX-XXXX-XXXX (Optional)">
+                                </div>
+                                <span class="helper-text">पहचान प्रमाण पत्र के लिए (यदि उपलब्ध हो)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Date & 30-Minute Slot Selection -->
+                    <div class="form-block">
+                        <div class="form-block-header">
+                            <span class="step-num">2</span>
+                            <div>
+                                <h3>तारीख और 30-मिनट का समय स्लॉट (Select Date & 30-Min Slot)</h3>
+                                <p>एक बार में केवल एक स्लॉट बुक किया जा सकता है</p>
+                            </div>
+                        </div>
+
+                        <div class="date-picker-row">
+                            <div class="form-group date-group">
+                                <label for="bookingDate">अपॉइंटमेंट की तारीख (Date) <span class="req">*</span></label>
+                                <div class="input-with-icon">
+                                    <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                    <input type="date" id="bookingDate" required>
+                                </div>
+                                <span class="error-msg" id="dateError">कृपया तारीख चुनें</span>
+                            </div>
+                            <div class="selected-slot-preview" id="selectedSlotBanner">
+                                <span>चयनित स्लॉट:</span>
+                                <strong id="previewSlotText">कोई स्लॉट नहीं चुना गया</strong>
+                            </div>
+                        </div>
+
+                        <!-- 30-minute slot picker -->
+                        <div class="slots-container">
+                            <div class="slot-session-title">
+                                <span>🌅 सुबह का सत्र (Morning Session - 30 Min Each)</span>
+                            </div>
+                            <div class="slots-grid" id="morningSlots">
+                                <button type="button" class="slot-btn" data-slot="10:00 AM - 10:30 AM">10:00 AM - 10:30 AM</button>
+                                <button type="button" class="slot-btn" data-slot="10:30 AM - 11:00 AM">10:30 AM - 11:00 AM</button>
+                                <button type="button" class="slot-btn" data-slot="11:00 AM - 11:30 AM">11:00 AM - 11:30 AM</button>
+                                <button type="button" class="slot-btn" data-slot="11:30 AM - 12:00 PM">11:30 AM - 12:00 PM</button>
+                                <button type="button" class="slot-btn" data-slot="12:00 PM - 12:30 PM">12:00 PM - 12:30 PM</button>
+                                <button type="button" class="slot-btn" data-slot="12:30 PM - 01:00 PM">12:30 PM - 01:00 PM</button>
+                            </div>
+
+                            <div class="slot-session-title mt-4">
+                                <span>🌆 शाम का सत्र (Evening Session - 30 Min Each)</span>
+                            </div>
+                            <div class="slots-grid" id="eveningSlots">
+                                <button type="button" class="slot-btn" data-slot="04:00 PM - 04:30 PM">04:00 PM - 04:30 PM</button>
+                                <button type="button" class="slot-btn" data-slot="04:30 PM - 05:00 PM">04:30 PM - 05:00 PM</button>
+                                <button type="button" class="slot-btn" data-slot="05:00 PM - 05:30 PM">05:00 PM - 05:30 PM</button>
+                                <button type="button" class="slot-btn" data-slot="05:30 PM - 06:00 PM">05:30 PM - 06:00 PM</button>
+                                <button type="button" class="slot-btn" data-slot="06:00 PM - 06:30 PM">06:00 PM - 06:30 PM</button>
+                                <button type="button" class="slot-btn" data-slot="06:30 PM - 07:00 PM">06:30 PM - 07:00 PM</button>
+                                <button type="button" class="slot-btn" data-slot="07:00 PM - 07:30 PM">07:00 PM - 07:30 PM</button>
+                                <button type="button" class="slot-btn" data-slot="07:30 PM - 08:00 PM">07:30 PM - 08:00 PM</button>
+                            </div>
+                            <span class="error-msg text-center mt-2" id="slotError">कृपया 30-मिनट का एक समय स्लॉट चुनें</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Dental Problem / Reason -->
+                    <div class="form-block">
+                        <div class="form-block-header">
+                            <span class="step-num">3</span>
+                            <div>
+                                <h3>समस्या या परामर्श का कारण (Dental Concern)</h3>
+                                <p>डॉक्टर को पहले से तैयारी में मदद मिलती है</p>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="dentalConcern">मुख्य परेशानी (Select Problem)</label>
+                                <select id="dentalConcern">
+                                    <option value="दांत दर्द (Tooth Pain / Ache)">दांत दर्द (Tooth Pain / Ache)</option>
+                                    <option value="नियमित चेकअप (Routine Check-up / OPD)">नियमित चेकअप (Routine Check-up / OPD)</option>
+                                    <option value="रूट कैनाल (Root Canal Treatment - RCT)">रूट कैनाल (Root Canal Treatment - RCT)</option>
+                                    <option value="दांतों की सफाई (Teeth Cleaning & Scaling)">दांतों की सफाई (Teeth Cleaning & Scaling)</option>
+                                    <option value="कीड़ा लगना / कैविटी (Cavity / Filling)">कीड़ा लगना / कैविटी (Cavity / Filling)</option>
+                                    <option value="मसूड़ों से खून आना (Bleeding Gums)">मसूड़ों से खून आना (Bleeding Gums)</option>
+                                    <option value="दांत निकलवाना (Painless Extraction)">दांत निकलवाना (Painless Extraction)</option>
+                                    <option value="तार / ब्रेसिज़ (Braces / Aligners)">तार / ब्रेसिज़ (Braces / Aligners)</option>
+                                    <option value="नया दांत / इम्प्लांट (Dental Implant / Crown)">नया दांत / इम्प्लांट (Dental Implant / Crown)</option>
+                                    <option value="अन्य परेशानी (Other Concern)">अन्य परेशानी (Other Concern)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="additionalNotes">अतिरिक्त विवरण (Notes - Optional)</label>
+                                <input type="text" id="additionalNotes" placeholder="उदा. 2 दिन से दर्द है या ठंडा-गर्म लगता है">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submission Card -->
+                    <div class="booking-submit-card">
+                        <div class="whatsapp-notice">
+                            <div class="wa-icon-large">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="#25D366"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.97.58 3.81 1.59 5.37L2 22l4.88-1.67c1.5 1 3.29 1.58 5.16 1.58 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg>
+                            </div>
+                            <div class="wa-notice-text">
+                                <strong>WhatsApp OPD Booking: 9956533534</strong>
+                                <p>बटन दबाते ही यह अपॉइंटमेंट सीधे क्लिनिक के आधिकारिक WhatsApp नंबर पर सुरक्षित भेजा जाएगा।</p>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-whatsapp-book" id="submitBookingBtn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.276-.1-.476-.15-.677.15-.2.301-.776.978-.952 1.179-.176.2-.351.226-.652.075-.301-.15-1.27-.468-2.42-1.493-.895-.798-1.5-1.785-1.676-2.086-.176-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.15-.175.2-.3.301-.501.1-.2.05-.376-.025-.526-.075-.15-.677-1.63-.928-2.23-.244-.585-.493-.506-.677-.515-.175-.009-.376-.01-.577-.01-.2 0-.527.075-.802.376-.276.3-1.053 1.029-1.053 2.509 0 1.48 1.078 2.909 1.229 3.109.15.2 2.122 3.24 5.141 4.542.718.31 1.279.495 1.716.634.721.229 1.377.197 1.896.12.578-.087 1.78-.727 2.03-1.43.251-.703.251-1.305.176-1.43-.075-.125-.276-.201-.577-.351zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.97.58 3.81 1.59 5.37L2 22l4.88-1.67c1.5 1 3.29 1.58 5.16 1.58 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg>
+                            <span>WhatsApp पर 30-Min OPD स्लॉट बुक करें</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Last Booking Receipt Popup / Box -->
+                <div class="booking-receipt-box" id="bookingReceiptBox" style="display: none;">
+                    <div class="receipt-header">
+                        <span class="badge-success">✓ अपॉइंटमेंट रिक्वेस्ट तैयार है!</span>
+                        <button class="close-receipt-btn" onclick="closeReceipt()">&times;</button>
+                    </div>
+                    <div class="receipt-body">
+                        <p>आपका 30-मिनट का स्लॉट WhatsApp पर भेजा जा चुका है। यदि WhatsApp अपने आप नहीं खुला तो नीचे बटन दबाएं:</p>
+                        <div class="receipt-details" id="receiptSummary"></div>
+                        <a href="#" id="directWhatsAppLink" target="_blank" class="btn btn-whatsapp-book mt-3">
+                            WhatsApp ओपन करें (9956533534)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge-sub">हमारी सेवाएं</span>
+                <h2 class="section-title">क्लिनिक में उपलब्ध प्रमुख उपचार</h2>
+                <p class="section-desc">अत्याधुनिक मशीनों और दर्दमुक्त तकनीकों द्वारा संपूर्ण दंत चिकित्सा</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🦷</div>
+                    <h3>रूट कैनाल ट्रीटमेंट (RCT)</h3>
+                    <p>Single-sitting आधुनिक रूट कैनाल, जिससे खराब और सड़े हुए दांत को बिना निकाले बचाया जाता है।</p>
+                    <span class="service-badge">30 Min Consultation</span>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>दांतों की सफाई व पॉलिश</h3>
+                    <p>Ultrasonic स्केलिंग तकनीक द्वारा पायरिया, पीलेपन और बदबू से पूर्ण छुटकारा।</p>
+                    <span class="service-badge">30 Min Slot</span>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔩</div>
+                    <h3>डेंटल इम्प्लांट (Implants)</h3>
+                    <p>टूटे या निकाले गए दांत की जगह पर स्थायी नया प्राकृतिक दांत लगाना।</p>
+                    <span class="service-badge">Expert Care</span>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">😁</div>
+                    <h3>तार एवं पारदर्शी अलाइनर्स (Braces)</h3>
+                    <p>टेढ़े-मेढ़े और आगे-पीछे दांतों को सुंदर और सीधा करने के लिए Braces और Aligners।</p>
+                    <span class="service-badge">Orthodontics</span>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>दर्दमुक्त दांत निकालना (Extraction)</h3>
+                    <p>अक्ल दाढ़ (Wisdom Tooth) और खराब दांतों को बिना दर्द के सुरक्षित बाहर निकालना।</p>
+                    <span class="service-badge">Painless</span>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">👶</div>
+                    <h3>बच्चों के दांतों का इलाज</h3>
+                    <p>बच्चों में कैविटी, दूध के दांतों की सुरक्षा और फ्लोराइड ट्रीटमेंट।</p>
+                    <span class="service-badge">Pediatric Care</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Doctor Section -->
+    <section class="about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-image-col">
+                <div class="about-image-card">
+                    <img src="assets/doctor.jpg" alt="Dr. Manish Dental Specialist" class="about-doc-img">
+                    <div class="experience-badge">
+                        <strong>10+</strong>
+                        <span>वर्षों का सफल अनुभव</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-text-col">
+                <span class="badge-sub">डॉक्टर के बारे में</span>
+                <h2 class="section-title">Dr. Manish से मिलें</h2>
+                <p class="about-lead">
+                    "हमारा लक्ष्य है कि हर मरीज बिना किसी डर या दर्द के आत्मविश्वास भरी मुस्कान के साथ क्लिनिक से जाए।"
+                </p>
+                <p class="about-desc">
+                    Dr. Manish एक अनुभवी और विशेषज्ञ डेंटल सर्जन हैं। वे रूट कैनाल, कॉस्मेटिक डेंटिस्ट्री, डेंटल इम्प्लांट्स और ऑर्थोडॉन्टिक उपचार में माहिर हैं। प्रत्येक मरीज के लिए 30 मिनट का व्यक्तिगत OPD समय सुनिश्चित किया जाता है ताकि समस्या की गहराई से जांच हो सके।
+                </p>
+
+                <div class="about-points">
+                    <div class="point-item">
+                        <span class="check-icon">✓</span>
+                        <span>प्रमाणित एवं उच्च गुणवत्ता वाले डेंटल उपकरण</span>
+                    </div>
+                    <div class="point-item">
+                        <span class="check-icon">✓</span>
+                        <span>स्वच्छता और स्ट्रिलाइजेशन का 100% कड़ाई से पालन</span>
+                    </div>
+                    <div class="point-item">
+                        <span class="check-icon">✓</span>
+                        <span>सुलभ फीस और पारदर्शी परामर्श</span>
+                    </div>
+                    <div class="point-item">
+                        <span class="check-icon">✓</span>
+                        <span>सीधे WhatsApp (9956533534) पर OPD स्लॉट बुकिंग</span>
+                    </div>
+                </div>
+
+                <div class="about-cta-row">
+                    <a href="#booking" class="btn btn-primary">Book 30-Min OPD Slot</a>
+                    <a href="https://wa.me/919956533534" target="_blank" class="btn btn-whatsapp-outline">
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Info & Timings -->
+    <section class="info-section" id="contact">
+        <div class="container">
+            <div class="info-cards-grid">
+                <div class="info-card">
+                    <div class="card-icon">📍</div>
+                    <h3>क्लिनिक का पता (Location)</h3>
+                    <p>Main Market, Dental Care & OPD Centre</p>
+                    <p class="sub-info">लैंडमार्क: मेन रोड के सामने</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">⏰</div>
+                    <h3>OPD समय (Timings)</h3>
+                    <p><strong>सोमवार - शनिवार:</strong> 10:00 AM - 08:00 PM</p>
+                    <p><strong>रविवार:</strong> 10:00 AM - 02:00 PM</p>
+                    <p class="sub-info">30-मिनट स्लॉट अनुसार</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">📞</div>
+                    <h3>सीधा संपर्क व WhatsApp</h3>
+                    <p><strong>मोबाइल:</strong> +91 9956533534</p>
+                    <p><strong>WhatsApp OPD:</strong> 9956533534</p>
+                    <a href="https://wa.me/919956533534" target="_blank" class="direct-link">WhatsApp पर मैसेज करें &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Dr. Manish Dental Clinic</h3>
+                <p>स्वस्थ दांत, खुशहाल जिंदगी। 30-मिनट OPD अपॉइंटमेंट सीधे WhatsApp (9956533534) पर बुक करें।</p>
+            </div>
+            <div class="footer-links">
+                <a href="#booking">OPD Booking</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Doctor</a>
+                <a href="javascript:void(0)" onclick="openManishAI()">Manish AI Assistant</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>© 2026 Dr. Manish Dental Clinic. All Rights Reserved. WhatsApp OPD: 9956533534</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Action Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:9956533534" class="sticky-action call-action">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Call Clinic</span>
+        </a>
+        <a href="#booking" class="sticky-action book-action">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span>Book 30-Min OPD</span>
+        </a>
+        <button class="sticky-action ai-action" onclick="openManishAI()">
+            <span class="ai-emoji">🤖</span>
+            <span>Manish AI</span>
+        </button>
+    </div>
+
+    <!-- Manish AI Chat Widget (Interactive AI Assistant) -->
+    <div class="manish-ai-widget" id="manishAiWidget">
+        <!-- Floating Trigger Button -->
+        <button class="manish-ai-trigger" id="manishAiTrigger" onclick="toggleManishAI()" aria-label="Open Manish AI Assistant">
+            <span class="ai-badge-online"></span>
+            <div class="ai-avatar-thumb">
+                <img src="assets/doctor.jpg" alt="Manish AI">
+            </div>
+            <span class="ai-trigger-label">Manish AI</span>
+        </button>
+
+        <!-- Chat Modal / Window -->
+        <div class="manish-chat-window" id="manishChatWindow">
+            <div class="chat-header">
+                <div class="chat-header-user">
+                    <div class="chat-avatar">
+                        <img src="assets/doctor.jpg" alt="Manish AI">
+                        <span class="status-indicator"></span>
+                    </div>
+                    <div>
+                        <div class="chat-title-row">
+                            <h4>Manish AI</h4>
+                            <span class="ai-tag">Clinic Assistant</span>
+                        </div>
+                        <p class="chat-status">ऑनलाइन • दांतों की देखभाल में आपकी मदद के लिए</p>
+                    </div>
+                </div>
+                <div class="chat-header-actions">
+                    <button class="chat-close-btn" onclick="toggleManishAI()" aria-label="Close Chat">&times;</button>
+                </div>
+            </div>
+
+            <!-- Chat Messages Area -->
+            <div class="chat-messages" id="chatMessages">
+                <!-- Welcome Bot Message -->
+                <div class="message bot-message">
+                    <div class="message-bubble">
+                        <p>नमस्ते! 🙏 मैं <strong>Manish AI</strong> हूँ, Dr. Manish Dental Clinic का डिजिटल असिस्टेंट।</p>
+                        <p class="mt-1">मैं आपकी OPD बुकिंग, दांत के दर्द के घरेलू सुझाव, क्लिनिक टाइमिंग या उपचार की जानकारी में मदद कर सकता हूँ।</p>
+                    </div>
+                    <span class="message-time">अभी</span>
+                </div>
+
+                <!-- Quick Prompt Suggestions -->
+                <div class="quick-prompts" id="quickPrompts">
+                    <span class="quick-title">त्वरित सवाल (Quick Questions):</span>
+                    <button class="prompt-chip" onclick="handleQuickPrompt('OPD 30-Min Slot कैसे बुक करें?')">
+                        📅 OPD Slot कैसे बुक करें?
+                    </button>
+                    <button class="prompt-chip" onclick="handleQuickPrompt('दांत में बहुत तेज दर्द है, तुरंत क्या करूँ?')">
+                        🦷 दांत दर्द में तुरंत राहत कैसे पाएं?
+                    </button>
+                    <button class="prompt-chip" onclick="handleQuickPrompt('रूट कैनाल (RCT) में कितना समय और खर्च लगता है?')">
+                        ⚡ रूट कैनाल (RCT) की जानकारी
+                    </button>
+                    <button class="prompt-chip" onclick="handleQuickPrompt('क्लिनिक का समय और पता क्या है?')">
+                        ⏰ क्लिनिक का समय और पता
+                    </button>
+                    <button class="prompt-chip" onclick="handleQuickPrompt('पेशेंट कोड (Patient Code) क्या है?')">
+                        🆔 पेशेंट कोड क्या होता है?
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chat Input Area -->
+            <div class="chat-input-area">
+                <form id="chatForm" onsubmit="handleChatSubmit(event)">
+                    <input type="text" id="chatInput" placeholder="अपना सवाल यहाँ लिखें (उदा. दांत साफ कराना है)..." autocomplete="off">
+                    <button type="submit" class="chat-send-btn" aria-label="Send Message">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </form>
+                <div class="chat-footer-note">
+                    WhatsApp Helpline: <a href="https://wa.me/919956533534" target="_blank">9956533534</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
